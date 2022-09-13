@@ -67,3 +67,18 @@
 .reveal .justify-start { justify-content: flex-start; }
 .reveal .justify-center { justify-content: center; }
 .reveal .justify-end { justify-content: flex-end; }
+.discord-block{
+	display: flex;
+	flex-direction: column;
+	background-color: #fff;
+	align-items: center;
+	justify-content: center;
+}
+.block{
+	display: flex;
+	background-color: #fff;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
