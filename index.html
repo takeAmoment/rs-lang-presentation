@@ -8,7 +8,7 @@
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/blood.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
@@ -16,19 +16,328 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2
-						<aside class="notes">
-						<p>Some notes</p>
-						</aside>
-						<p>Some slide text</p>
-						<aside class="notes">
-						<p>and some more notes</p>
-					</aside>
+				<section>
+					<h2 style="text-decoration: underline">Обзор выполнения финального таска командой</h2>
+					<img src="./assets/igor.png" alt="igor" width="250px">
+					<img src="./assets/sasha.png" alt="sasha" width="250px">
+					<img src="./assets/vlad.png" alt="vlad" width="250px">
+				</section>
+				<section>
+					<h2>Содержание</h2> 
+					<ol style='font-size: 28px'>
+						<li>Результат командной работы
+							<ul>
+								<li>описание приложения</li>
+								<li>дополнительные/интересные фичи</li>
+							</ul>
+						</li>
+						<li>Организация командной работы
+							<ul>
+								<li>RACI матрица</li>
+								<li>kanban</li>
+								<li>другие инструменты для организации работы</li>
+								<li>организационные сложности и их решение</li>
+							</ul>
+						</li>
+						<li>Особенности технической реализации проекта и его репозиторий
+							<ul>
+								<li>использованные технологии</li>
+								<li>история коммитов</li>
+								<li>примеры PR</li>
+								<li>технические сложности и их решение</li>
+							</ul>
+						</li>
+					</ol>
+				</section>
+				<section>
+					<h2>1. Результат командной работы</h2>
+				</section>
+				<section>
+					<section>
+						<h3 style="font-style: italic">Описание приложения</h3>
+					</section>
+					<section class="r-stack">
+						<img src="./assets/team.png" alt="team" width="700px" height="450px">
+						<p>Netlify: <a href="https://rslang-igorpex.netlify.app/">https://rslang-igorpex.netlify.app/</a></p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3 style="font-style: italic">Дополнительные/интересные фичи</h3>
+					</section>
+					<section>
+						<img data-src="./assets/search.png">
+					</section>
+				</section>
+				<section data-auto-animate>
+					<h2>2. Организация командной работы</h2>
+				</section>
+				<section>
+					<section data-auto-animate>
+						<h3 style="margin-bottom: 40px; font-style: italic">RACI матрица
+					</section>
+					<section data-auto-animate>
+						<table >
+							<tr>
+								<th></th>
+								<th style="font-size: 32px; text-transform: none;
+									color: blue; border-bottom-color: white;">
+									Igor
+									<!-- <img src="./assets/igor.png" alt="igor" width="100px" height="100px"> -->
+								</th>
+								<th style="font-size: 32px; text-transform: none;
+									color: green; border-bottom-color: white;">
+									Vlad
+								</th>
+								<th style="font-size: 32px; text-transform: none;
+									color: yellow; border-bottom-color: white;">
+									Sasha
+								</th>
+							</tr>
+							<tr>
+								<th style="font-size: 32px; text-transform: none">
+									Серверная часть;
+									авторизация;
+									API;
+									игра "Спринт";
+									статистика;
+								</th>
+								<td style="color: blue; border-bottom-color: white;">R</td>
+								<td>I</td>
+								<td>I</td>
+							</tr>
+							<tr>
+								<th style="font-size: 32px; text-transform: none">
+									design;
+									main page;
+									team page;
+									search ficha;
+								</th>
+								<td>A</td>
+								<td style="color: green; border-bottom-color: white;">R</td>
+								<td>I</td>
+							</tr>
+								<th style="font-size: 32px; text-transform: none"> 
+									e-book;
+									audiochallenge game
+								</th>
+								<td>A</td>
+								<td>I</td>
+								<td style="color: yellow; border-bottom-color: white;">R</td>
+							</tr>
+						</table>
+						<p style="font-size: 18px"><b>R</b> – Responsible (исполняет);
+							<b>A</b> – Accountable (несет ответственность);
+							<b>C</b> – Consult before doing (консультирует до исполнения);
+							<b>I</b> – Inform after doing (оповещается после исполнения).</p>
+					</section>
+				</section>
+				<section>
+					<section data-auto-animate="1">
+						<h3 style="font-style: italic">Kanban</h3>
+					</section>
+					<section data-auto-animate="1">
+						<img  src="./assets/trello.png" alt="materials">
+					</section>
+				</section>
+				<section>
+					<section data-auto-animate="1">
+						<h3 style="font-style: italic">Другие инструменты для организации работы</h3>
+					</section>
+					<section data-auto-animate="1">
+						<img src="./assets/1.jpg">
+					</section>
+					<section data-auto-animate="1">
+						<img src="./assets/figma-img.png" alt="figma">
+					</section>
+					<section data-auto-animate="1">
+						<img src="./assets/materials.png" alt="materials">
+					</section>
+					<section class="r-stretch" data-auto-animate="1">
+						<img src="./assets/skype.png" alt="materials">
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3 style="margin-bottom: 100px; font-style: italic">Организационные сложности и их решение</h3>
+					</section>
+					<section>
+						<ul>
+							<li class="fragment" data-fragment-index="3">Отсутствие возможности работать всем членам команды
+								 в одном временном графике</li>
+							<li class="fragment" data-fragment-index="1">Отсутствие опыта работы с kanban board</li>
+							<li class="fragment" data-fragment-index="2">Сложности с разделением задач между участниками команды</li>
+							<li class="fragment" data-fragment-index="4">Мерж</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<h2 style="margin-bottom: 30px">3. Особенности технической реализации проекта и его репозиторий</h2>
+				</section>
+				<section class="r-stretch">
+					<section>
+						<h3 style="font-style: italic">Использованные технологии</h3>
+					</section>
+					<section>
+						<div style="display: flex; flex-direction: row;">
+							<div>
+								<img src="./assets/typescript.png" alt="typescript" width="120px" height="120px">
+								<ul>
+									<li style="font-size: 24px;" class="fragment" data-fragment-index="1">Уберегал от ошибок</li>
+									<li style="font-size: 24px;" class="fragment" data-fragment-index="2">Мешал запуску определенного кода</li>
+								</ul>
+							</div>
+							<div>
+								<img src="./assets/webpack.png" alt="webpack" width="150px" height="150px">
+								<ul>
+									<li style="font-size: 24px;" class="fragment" data-fragment-index="3"> HtmlWebpackPlugin</li>
+									<li style="font-size: 24px;" class="fragment" data-fragment-index="4"> CopyWebpackPlugin</li>
+									<li style="font-size: 24px;" class="fragment" data-fragment-index="5"> Loaders</li>
+									<li style="font-size: 24px;" class="fragment" data-fragment-index="6"> Dev-server</li>
+								</ul>
+							</div>
+							<div>
+								<img src="./assets/eslint.png" alt="eslint" width="130px" height="110px">
+								<ul style="margin-left: 90px">
+									<li style="font-size: 24px;" class="fragment" data-fragment-index="7">Заствлял правильно писать код</li>
+									<li style="font-size: 24px;" class="fragment" data-fragment-index="8">airbnb-base, airbnb-typescript/base</li>
+								</ul>
+							</div>
+						</div>
+						<div style="display:flex; flex-direction: column; align-items: center; justify-content: center;">
+							<img src="./assets/chart.png" alt="chart" width="100px" height="100px">
+							<p style="font-size: 24px;">Chart.js</p>
+						</div>
+					</section>
+				</section>
+				<section data-auto-animate="1">
+					<section>
+						<h3 style="font-style: italic">История коммитов</h3>
+					</section>
+					<section data-auto-animate="1">
+						<div style="display: flex; align-items:center; justify-content: center;">
+							<p>291 коммит</p>
+						</div>
+					</section>
+					<section data-auto-animate="1">
+					<div style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 50px">
+						<p>291 коммит</p>
+						<img src="./assets/correct.png" alt="correct">
+					</div>
+					</section>
+					<section>
+						<h2>График коммитов по дням</h2>
+						<div>
+							<canvas id="myChart"></canvas>
+						</div>
+					</section>
+				</section>
+				<section data-auto-animate="1">
+					<section>
+						<h3 style="font-style: italic">Примеры PR</h3>
+					</section>
+					<section data-auto-animate="1">
+						<div style="display: flex; align-items:center; justify-content: center;">
+							<p>36 пул реквестов</p>
+						</div>
+					</section>
+					<section data-auto-animate="1">
+						<div style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 50px">
+							<p>36 пул реквестов</p>
+							<img src="./assets/correct.png" alt="correct">
+						</div>
+					</section>
+					<section>
+						<div class="r-stack">
+							<img src="./assets/pr.png" alt="pull request">
+						</div>
+						<a href="https://github.com/igorpex/rslang/pull/21">https://github.com/igorpex/rslang/pull/21</a>
+					</section>
+				</section>
+			
+				<section data-auto-animate="1">
+					<section>
+						<h3 style="font-style: italic">Технические сложности и их решение</h3>
+					</section>
+					<section data-auto-animate="1">
+						<div>
+							<div class="fragment" data-fragment-index="1">1. Нехватка времени</div>
+						</div>
+					</section>
+					<section data-auto-animate="1">
+						<div>1. Нехватка времени</div>
+						<div class="r-stack">
+							<img  class="fragment fade-out" data-fragment-index="1" src="./assets/hourglass.png" alt="time">
+							<img  class="fragment current-visible" data-fragment-index="1" style="transform: rotate(-90deg);" src="./assets/hourglass.png" alt="time">
+						</div>
+					</section>
+					<section>
+						<h3>Решение</h3>
+						<div>
+							<img  class="fragment" data-fragment-index="1" src="./assets/sleep.jpg" alt="wake-up" width="400px">
+							<img  class="fragment" data-fragment-index="1" src="./assets/coffee-cup.png" alt="coffe" width="80px">
+						</div>
+					</section>
+					<section data-auto-animate="1">
+						<div class="fragment" data-fragment-index="1">2. Отслеживание переходов по ссылкам и добавление активной стилистики.</div>
+					</section>
+					<section data-auto-animate="1">
+						<h3>Решение</h3>
+						<div>Отслеживать с помощью роутера.</div>
+					</section>
+					<section data-auto-animate="1">
+						<div class="fragment" data-fragment-index="1">3. Возврат на исходную страницу после логина \ регистрации</div>
+					</section>
+					<section data-auto-animate="1">
+						<h3>Решение</h3>
+						<div class="fragment" data-fragment-index="1">В SessionStorage сохраняется источник перехода.</div>
+					</section>
+					<section data-auto-animate="1">
+						<div class="fragment" data-fragment-index="1">4. Чтение чужого кода</div>
+					</section>
+					<section data-auto-animate="1">
+						<h3>Решение</h3>
+						<div class="fragment" data-fragment-index="1">Просто читать.</div>
+					</section>
+				</section>
+				<section>
+					<h2>Были оговорены следующие темы</h2> 
+					<ol style='font-size: 28px'>
+						<li>Результат командной работы
+							<ul>
+								<li>описание приложения</li>
+								<li>дополнительные/интересные фичи</li>
+							</ul>
+						</li>
+						<li>Организация командной работы
+							<ul>
+								<li>RACI матрица</li>
+								<li>kanban</li>
+								<li>другие инструменты для организации работы</li>
+								<li>организационные сложности и их решение</li>
+							</ul>
+						</li>
+						<li>Особенности технической реализации проекта и его репозиторий
+							<ul>
+								<li>использованные технологии</li>
+								<li>история коммитов</li>
+								<li>примеры PR</li>
+								<li>технические сложности и их решение</li>
+							</ul>
+						</li>
+					</ol>
+				</section>
+				<section class="r-stack">
+					<h2>Thank you!!!</h2>
+					<img src="./assets/Deadline.jpg" alt="Deadline" height="500px">
 				</section>
 			</div>
 		</div>
 
+		<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+  		<script>src = "https://cdn.jsdelivr.net/npm/chartjs-adapter-moment"</script>
+  		<script src="./commits-chart.js"></script>
 		<script src="dist/reveal.js"></script>
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
