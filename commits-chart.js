@@ -114,9 +114,9 @@ const chart = new Chart(document.getElementById('myChart'), {
   options: {
     animations: {
       tension: {
-        duration: 5000,
+        duration: 3000,
         easing: 'linear',
-        from: 0.5,
+        from: 0.7,
         to: 0,
         loop: true,
       },
